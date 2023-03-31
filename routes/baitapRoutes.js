@@ -14,7 +14,7 @@ app.post('/baitap', async(req, res) => {
 })
 
 app.get('/listbaitap', async(req, res) => {
-  const baitap = await baitapModel.find({});
+  const baitap = await baitapModel.find();
   try {
     res.send(baitap);
   } catch (err) {
